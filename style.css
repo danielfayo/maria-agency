@@ -1,0 +1,159 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Libre Caslon Text', serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #212121;
+    --white: #ffffff;
+    --red: #BC0014;
+    --inter: 'Inter', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --caslon: 'Libre Caslon Text', serif;
+}
+
+nav {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 3rem 0 3rem 4.75rem;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 85.25rem;
+    margin: auto;
+}
+
+.logo {
+    font-family: var(--caslon);
+    font-weight: 600;
+    font-size: 2.25rem;
+}
+
+.red {
+    color: var(--red);
+}
+
+.nav-items {
+    display: flex;
+    gap: 2.5rem;
+    font-family: var(--inter);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+li {
+    list-style: none;
+}
+
+.hero-text {
+    padding-top: 8.1875rem;
+    font-family: var(--inter);
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.hero {
+    padding-left: 4.75rem;
+    background-color: var(--black);
+}
+
+.hero-container {
+    display: flex;
+    position: relative;
+    color: var(--white);
+}
+
+.style,
+.agency {
+    font-size: 8rem;
+    position: absolute;
+}
+
+.style {
+    top: 11.25rem;
+    right: 50.4375rem;
+    z-index: 10 ;
+}
+
+.agency {
+    right: 37.25rem;
+    top: 17.2rem;
+    z-index: 2;
+    color: #212121;
+}
+
+.hero-button {
+    background: none;
+    color: var(--white);
+    font-family: var(--roboto);
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding: 2rem 3rem;
+    border: 1px solid var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    z-index: 10;
+}
+
+.hero-container img {
+    position: absolute;
+}
+
+.hero-img {
+    right: 0;
+}
+
+.hero-white-img {
+    left: 25.5rem;
+    top: 29rem;
+}
+
+@media screen and (max-width: 79.375rem) {
+    .nav-items {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 76.875rem) {
+    .nav-items {
+        display: none;
+    }
+
+    .nav-menu {
+        visibility: visible;
+    }
+
+    nav {
+        padding: 3rem 4.75rem 3rem;
+    }
+
+@media screen and (max-width: 48rem) {
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        padding: 2rem 2rem 2rem;
+    }
+}
+
+@media screen and (max-width: 26.5625rem) {
+    .logo {
+        font-size: 1.2rem;
+    }
+}
+
