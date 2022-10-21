@@ -17,8 +17,11 @@ font-family: 'Roboto', sans-serif; */
     --caslon: 'Libre Caslon Text', serif;
 }
 
+.nav-hero {
+    background-color: black;
+}
+
 nav {
-    background-color: var(--black);
     color: var(--white);
     padding: 3rem 0 3rem 4.75rem;
 }
@@ -58,7 +61,7 @@ li {
 }
 
 .hero-text {
-    padding-top: 8.1875rem;
+    padding-top: 7.0625rem;
     font-family: var(--inter);
     font-weight: 600;
     font-size: 4rem;
@@ -66,12 +69,14 @@ li {
 
 .hero {
     padding-left: 4.75rem;
-    background-color: var(--black);
+    padding-bottom: 6.5rem;
 }
 
 .hero-container {
     display: flex;
     position: relative;
+    max-width: 90rem;
+    margin: auto;
     color: var(--white);
 }
 
@@ -82,16 +87,15 @@ li {
 }
 
 .style {
-    top: 11.25rem;
+    top: 10rem;
     right: 50.4375rem;
     z-index: 10 ;
 }
 
 .agency {
     right: 37.25rem;
-    top: 17.2rem;
+    top: 17rem;
     z-index: 2;
-    color: #212121;
 }
 
 .hero-button {
@@ -100,26 +104,100 @@ li {
     font-family: var(--roboto);
     font-weight: 500;
     font-size: 1.25rem;
-    padding: 2rem 3rem;
+    /* padding: 2rem 4.9rem; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3.5rem;
+    padding-right: 4.6875rem;
     border: 1px solid var(--white);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 0.75rem;
+    margin-top: 24.25rem;
+    /* margin-bottom: 8.4375rem; */
     z-index: 10;
 }
 
-.hero-container img {
-    position: absolute;
+.button-icon {
+    max-width: 100%;
+    /* margin-left: 9rem; */
 }
 
 .hero-img {
+    position: absolute;
+    margin-right: 0.4rem;
     right: 0;
+    /* height: 100%; */
 }
 
 .hero-white-img {
+    position: absolute;
     left: 25.5rem;
     top: 29rem;
+}
+
+.about {
+    padding: 13.75rem 4rem 7.5rem;
+}
+
+.about-container {
+    max-width: 90rem;
+    margin: auto;
+    border: 1px solid;
+}
+
+.about-p {
+    font-family: var(--inter);
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 3.33rem;
+    margin-bottom: 9rem;
+}
+
+.about-span {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.about-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-avatar {
+    display: flex;
+    flex-direction: column;
+    width: 20.625rem;
+    margin-left: 2.5rem;
+}
+
+.avi-text {
+    font-family: var(--roboto);
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.74rem;
+    width: 100%;
+    margin: 1.3125rem 0 4.1875rem;
+}
+
+.about-avi-button {
+    padding: 2rem;
+    font-family: var(--roboto);
+    font-weight: 600;
+    font-size: 1.25rem;
+    background: none;
+    border: 1px solid var(--red);
+}
+
+@media screen and (max-width: 78.75rem) {
+    
+}
+
+@media screen and (max-width: 80.625rem) {
+    .style {
+        left: 50.4375rem;
+    }
 }
 
 @media screen and (max-width: 79.375rem) {
@@ -134,7 +212,7 @@ li {
     }
 
     .nav-menu {
-        visibility: visible;
+        display: block;
     }
 
     nav {
