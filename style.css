@@ -196,7 +196,15 @@ li {
 
 @media screen and (max-width: 80.625rem) {
     .style {
-        left: 50.4375rem;
+        left: 0.5rem;
+    }
+
+    .agency {
+        left: 2.5rem;
+    }
+
+    .hero-img {
+        opacity: 60%;
     }
 }
 
