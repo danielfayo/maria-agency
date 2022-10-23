@@ -65,6 +65,8 @@ li {
     font-family: var(--inter);
     font-weight: 600;
     font-size: 4rem;
+    position: relative;
+    z-index: 2;
 }
 
 .hero {
@@ -116,7 +118,8 @@ li {
     gap: 0.75rem;
     margin-top: 24.25rem;
     /* margin-bottom: 8.4375rem; */
-    z-index: 10;
+    position: relative;
+    z-index: 2;
 }
 
 .button-icon {
