@@ -90,12 +90,12 @@ li {
 
 .style {
     top: 10rem;
-    right: 50.4375rem;
+    left: 3.4rem;
     z-index: 10 ;
 }
 
 .agency {
-    right: 37.25rem;
+    left: 6.3rem;
     top: 17rem;
     z-index: 2;
 }
@@ -229,6 +229,14 @@ li {
     nav {
         padding: 3rem 4.75rem 3rem;
     }
+}
+
+@media screen and (max-width: 50.4375rem) /* 807px*/ {
+    .hero-white-img {
+        top: 43rem;
+        left: 100%;
+    }
+}
 
 @media screen and (max-width: 48rem) {
     .logo {
